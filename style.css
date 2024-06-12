@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: all .4s linear;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    transform: skewY(-8deg);
+    transform-origin: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-links li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    transition: width .4s linear;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.contact-btn button {
+    padding: 6px 30px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.toggle i {
+    font-size: 20px;
+}
+
+.none {
+    display: none;
+}
+
+.contact-btn button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    color: #fff;
+    transition: width .3s linear, color .4s linear;
+}
+
+.contact-btn button:hover::after {
+    width: 100%;
+}
+
+.contact-btn button:hover {
+    color: #fff;
+}
+
+.header-content {
+    transform: skewY(-8deg);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 25%;
+    background-color: rgb(255, 145, 55);
+    padding: 50px 30px;
+}
+
+.header-content h2,
+.header-content p {
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: 900;
+    transform: skewY(8deg);
+}
+
+.header-content p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.features {
+    padding: 20px 8%;
+    width: 100%;
+}
+
+.feature-header,
+.gallery-header {
+    padding: 0px 20%;
+    text-align: center;
+}
+
+.feature-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px 0px;
+    padding: 10px;
+}
+
+.feature-card {
+    width: 30%;
+    height: 500px;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 3px;
+}
+
+.feature-card img:hover {
+    transform: scale(1.0556565);
+}
+
+.feature-card::after {
+    content: "interior";
+    position: absolute;
+    z-index: 200;
+    bottom: 40%;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 0px 0px 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feature-content {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.feature-content p {
+    margin-top: 10px;
+}
+
+.blog {
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-left {
+    width: 65%;
+    height: 690px;
+    transform: skew(-18deg);
+    transform-origin: right top;
+    background-color: rgba(163, 162, 160, 0.42);
+    padding: 40px 60px;
+}
+
+.blog-left-content {
+    padding: 50px 150px 50px 50px;
+    transform: skew(198deg);
+    transform-origin: right top;
+}
+
+.blog-left-content h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.blog-left-content p {
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.blog-left-content button {
+    margin-top: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-left-content button:hover {
+    background-color: rgb(203, 71, 23);
+}
+
+.blog-right {
+    height: 670px;
+    transform: skew(-18deg);
+    transform-origin: bottom left;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-left: -200px;
+    left: 0%;
+}
+
+.blog-right-img {
+    width: 100%;
+    transform: skew(18deg);
+    transform-origin: bottom left;
+    overflow: hidden;
+}
+
+.blog-right-img img:hover {
+    transform: scale(1.056565);
+}
+
+.blog-right-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.blog-right-box {
+    width: 48%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(18deg);
+    transform-origin: bottom left;
+}
+
+.gallery {
+    padding: 20px 8%;
+    width: 100%;
+    height: 100vh;
+}
+
+.blog-right-box h3:hover {
+    border-bottom: 2px solid #000;
+}
+
+.gallery-container {
+    width: 100%;
+    height: 80%;
+    padding: 30px 8% 0px;
+}
+
+.gallery-row {
+    margin: 10px 0px;
+    height: 49%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-col {
+    width: 50%;
+    height: 100%;
+    margin: 0px 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.gallery-col img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.gallery-col::before {
+    content: "Interior Designs";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-transform: uppercase;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: transform .4s ease-in-out;
+    background-color: #00000076;
+    cursor: pointer;
+}
+
+.gallery-col:hover::before {
+    transform: scale(1);
+}
+
+.contact {
+    width: 100%;
+    height: 85vh;
+    transform: skewY(8deg);
+    transform-origin: left bottom;
+    background-color: rgb(235, 229, 229);
+    position: relative;
+    z-index: 0;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(235, 229, 229);
+    transform: skewY(-8deg);
+}
+
+.contact-skewed {
+    transform: skewY(-8deg);
+    padding: 30px 8%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-input {
+    width: 35%;
+}
+
+.contact-input h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-input-container {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    border-radius: 3px;
+}
+
+.contact-input-container input {
+    width: 50%;
+    height: 100%;
+    border: none;
+    padding: 10px 20px;
+}
+
+.contact-input-container button[type="button"] {
+    width: 30%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    color: orangered;
+    cursor: pointer;
+}
+
+.contact-input-container button[type="submit"] {
+    width: 20%;
+    height: 100%;
+    background-color: orangered;
+    cursor: pointer;
+    border: none;
+    transform: skew(8deg);
+    font-size: 14px;
+    position: relative;
+}
+
+.contact-input-container button[type="submit"]::before {
+    content: "Search";
+    transform: skew(-8deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    position: relative;
+    width: 25%;
+    z-index: 10;
+    margin-top: -10%;
+    height: 300px;
+    background-color: orangered;
+    padding: 30px;
+    text-align: end;
+}
+
+.contact-content::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    right: 10%;
+    transform: skew(12deg);
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+}
+
+.contact-content img {
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.icons i {
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-content p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.icons i:hover {
+    color: #000;
+}
+
+.footer {
+    transform: skewY(-8deg);
+    padding: 10px 8%;
+}
+
+.footer-headings,
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.footer-headings h3 {
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    align-items: self-start;
+}
+
+.footer-links-col h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footer-links-col p {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: rgb(103, 103, 103);
+    cursor: pointer;
+}
+
+.footer-links-col p:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.terms {
+    color: rgb(103, 103, 103);
+}
+
+@media screen and (max-width:1100px) {
+    .header-content {
+        width: 35%;
+    }
+
+    .blog-right-content {
+        padding-right: 150px;
+    }
+
+    .contact-content {
+        width: 35%;
+    }
+
+    .footer-links {
+        padding: 20px 0px;
+    }
+
+    .contact::after {
+        height: 51vh;
+    }
+
+    .footer-headings h3 {
+        margin: 0px 10px;
+        font-size: 18px;
+    }
+
+    .feature-content p {
+        text-align: justify;
+    }
+
+    .features,
+    .gallery,
+    .gallery-container {
+        padding: 20px 5%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contact-content {
+        width: 40%;
+    }
+
+    .contact::after {
+        height: 53vh;
+    }
+}
+
+@media screen and (max-width:951px) {
+    .contact::after {
+        height: 56vh;
+    }
+
+    .blog-left {
+        padding: 30px 50px;
+    }
+
+    .blog-left-content {
+        padding: 50px 100px 0px 0px;
+    }
+
+    .blog-right-content {
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .none {
+        display: block;
+    }
+
+    .nav-links li {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        transform: translate(-50%, -50%) !important;
+        width: 50%;
+        background-color: rgb(255, 145, 55);
+        transform: skewY(10deg) !important;
+        padding: 50px 30px;
+    }
+
+    .header-content h2,
+    .header-content p {
+        margin: 10px 0px;
+        transform: skewY(-10deg);
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .header-content p {
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    .feature-body,
+    .gallery-row,
+    .footer-headings,
+    .footer-links,
+    .footer-end,
+    .blog {
+        flex-wrap: wrap;
+    }
+
+    .feature-card {
+        width: 80%;
+    }
+
+    .blog-left,
+    .blog-right {
+        width: 100%;
+    }
+
+    .blog-right {
+        margin-left: 0px;
+        left: -10%;
+    }
+
+    .blog-right-content {
+        padding-right: 0;
+    }
+
+    .gallery-container,
+    .gallery,
+    .contact {
+        height: auto;
+    }
+
+    .gallery-col {
+        width: 80%;
+    }
+
+    .contact-skewed {
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .contact-input,
+    .footer-end p {
+        width: 100%;
+    }
+
+    .contact-content {
+        margin-top: 50px;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .footer-headings h3 {
+        font-size: 18px;
+    }
+
+    .footer-links-col {
+        width: 45%;
+    }
+    .footer-end{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:568px){
+    .header-content{
+        width: 80%;
+        left: 10%;
+    }
+    .feature-card,.gallery-col{
+        width: 100%;
+    }
+    .blog-left-content h1{
+        font-size: 40px;
+    }
+    .blog-left-content p{
+        font-size: 15px;
+    }
+}

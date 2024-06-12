@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designs</title>
+    <link rel="shortcut icon" href="imgs/website_logo-removebg-preview-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skewed {
+            width: 100%;
+            height: 100%;
+            transform: skewY(8deg);
+            transform-origin: 100%;
+            padding: 50px 8%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skewed::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-image: url("imgs/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: skewY(-8deg);
+            transform-origin: 100%;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/2e8a04b08b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="skewed">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+                </div>
+                <ul class="nav-links">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Service</li>
+                    <li>Blog</li>
+                </ul>
+                <div class="contact-btn">
+                    <button class="button">Register</button>
+                    <button class="none toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+        <div class="text-light header-content">
+            <h2>Interior Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus culpa obcaecati impedit
+                doloribus accusamus, sit provident voluptatibus consequatur cupiditate. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Consequatur ad minus, distinctio nihil tenetur autem?
+            </p>
+        </div>
+    </section>
+
+    <div class="features">
+        <div class="feature-header">
+            <h1>Interior Designs</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laborum consectetur numquam facere saepe
+                magni illum, maxime voluptatum iste ullam.
+            </p>
+        </div>
+        <div class="feature-body">
+            <div class="feature-card">
+                <img src="imgs/card1.jpg" alt="">
+                <div class="feature-content">
+                    <h5>Interior design plays a crucial role in shaping the functionality</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, porro culpa minima impedit sint
+                        nulla cupiditate harum repellat est optio.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <img src="imgs/card2.jpg" alt="">
+                <div class="feature-content">
+                    <h5>Interior design plays a crucial role in shaping the functionality</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, porro culpa minima impedit sint
+                        nulla cupiditate harum repellat est optio.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <img src="imgs/card3.jpg" alt="">
+                <div class="feature-content">
+                    <h5>Interior design plays a crucial role in shaping the functionality</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, porro culpa minima impedit sint
+                        nulla cupiditate harum repellat est optio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="blog-left">
+            <div class="blog-left-content">
+                <h1>to create a communicative flexible <br> enhancement</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsam dignissimos neque consectetur
+                    repellat maxime quia optio necessitatibus beatae quam, expedita quasi id commodi tenetur molestias
+                    reprehenderit? Nisi magnam voluptatum eum iure odit voluptatem aperiam. Similique fuga atque non
+                    laudantium voluptatibus dicta officiis, dolorum quidem odio voluptas, exercitationem accusantium
+                    architecto!
+                </p>
+                <button>Enroll Now</button>
+            </div>
+        </div>
+        <div class="blog-right">
+            <div class="blog-right-img">
+                <img src="imgs/download.jpg" alt="">
+            </div>
+            <div class="blog-right-content">
+                <div class="blog-right-box">
+                    <h3>Google</h3>
+                </div>
+                <div class="blog-right-box">
+                    <h3>Tcs</h3>
+                </div>
+                <div class="blog-right-box">
+                    <h3>Flipkart</h3>
+                </div>
+                <div class="blog-right-box">
+                    <h3>Amazon</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-header">
+            <h1>Interior Gallery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum adipisci praesentium corrupti! Ipsum
+                pariatur aliquam eaque. Quibusdam debitis quo facilis.</p>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-row">
+                <div class="gallery-col">
+                    <img src="imgs/img1.jpg" alt="">
+                </div>
+                <div class="gallery-col">
+                    <img src="imgs/img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-col">
+                    <img src="imgs/img3.jpg" alt="">
+                </div>
+                <div class="gallery-col">
+                    <img src="imgs/img4.jpg" alt="">
+                </div>
+                <div class="gallery-col">
+                    <img src="imgs/img5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-skewed">
+            <div class="contact-input">
+                <h2>find a dealer near you</h2>
+                <div class="contact-input-container">
+                    <input type="text" placeholder="Enter your location">
+                    <button type="button">Detect Location</button>
+                    <button type="submit"></button>
+                </div>
+            </div>
+            <div class="contact-content">
+                <img src="imgs/logo.png" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <p>Interior Designing,1-14/7,16133</p>
+                <p>Rajahmundry,India</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-headings">
+                <h3>furniture + rooms system</h3>
+                <h3>x + n smart office</h3>
+                <h3>expertises</h3>
+                <h3>company</h3>
+                <h3>parter</h3>
+                <h3>press</h3>
+                <h3>contact</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-col">
+                    <h3>tables</h3>
+                    <p>individual workspace</p>
+                    <p>team workspace</p>
+                    <p>management</p>
+                    <p>confencence</p>
+                    <p>counter solutions</p>
+                </div>
+                <div class="footer-links-col">
+                    <h3>seating</h3>
+                    <p>task chairs</p>
+                    <p>visitor chairs</p>
+                    <p>management</p>
+                    <p>confencence</p>
+                    <p>best areas</p>
+                </div>
+                <div class="footer-links-col">
+                    <h3>storage space</h3>
+                    <p>room division</p>
+                    <p>cupboard system</p>
+                    <p>mobile storage</p>
+                </div>
+                <div class="footer-links-col">
+                    <h3>partitioning</h3>
+                    <p>screens</p>
+                    <p>room in room solutions</p>
+                    <p>glass partitions</p>
+                </div>
+                <div class="footer-links-col">
+                    <h3>creative areas</h3>
+                    <p>network place organic</p>
+                    <p>k + n balance office</p>
+                    <p>network place</p>
+                </div>
+            </div>
+            <div class="footer-end">
+                <p>copyright 2018 king * naurath | all rights reserved</p>
+                <p class="terms">terms of use | privacy policy</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
